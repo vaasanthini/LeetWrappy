@@ -63,10 +63,10 @@ export default function HeroSlide({ report, direction }: Props) {
         >
           <div className="glow-ring rounded-full p-1" style={{ background: 'var(--accent-soft)' }}>
             {profile.avatar ? (
-              // eslint-disable-next-line react/jsx-no-undef
-              <Image
+              <img
                 src={profile.avatar}
                 alt={profile.username}
+                
                 className="w-24 h-24 rounded-full object-cover"
               />
             ) : (
