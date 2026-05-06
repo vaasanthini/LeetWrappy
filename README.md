@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LeetWrapped
 
-## Getting Started
+**LeetWrapped** is a modern web app that visualizes your LeetCode journey in a beautiful, Spotify-Wrapped style interface. It helps developers reflect on their coding progress, compare profiles, and explore yearly stats in a clean, interactive way.
 
-First, run the development server:
+---
 
+##  Features
+
+-  **LeetCode Profile Visualization**
+  - Total problems solved
+  - Difficulty breakdown (Easy / Medium / Hard)
+  - Progress over time
+
+-  **Single User Mode**
+  - Enter a LeetCode username
+  - Generate a personalized coding “wrapped”
+
+-  **Compare Mode**
+  - Compare stats between two users side-by-side
+
+-  **Year Selection**
+  - View stats for different years (e.g., 2024, 2025, 2026)
+
+-  **Modern UI**
+  - Dark themed, responsive interface
+  - Smooth animations and interactive charts
+
+---
+
+## Tech Stack
+
+- **Next.js** – React framework for frontend + API routes
+- **TypeScript** – Type safety
+- **Tailwind CSS** – Styling
+- **Recharts / Charting Library** – Data visualization
+- **LeetCode API (unofficial / scraping layer)** – Fetching user stats
+
+---
+
+##  Getting Started
+
+### 1. Clone the repository
 ```bash
+git clone https://github.com/your-username/leetwrapped.git
+cd leetwrapped
+
+2. Install dependencies
+npm install
+
+3. Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in browser
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+app/              # Next.js app router pages
+lib/              # Utility functions and API services
+models/           # Data models / types
+services/         # API service layer (LeetCode fetching logic)
+public/           # Static assets
